@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
+const swaggerUi = require('swagger-ui-express');
+const swaggerFile = require('./swagger-output.json');
+const cors = require('cors');
 
 
 
@@ -14,7 +17,8 @@ const mongodb = require('./data/database');
 app.use(bodyParser.json());
 app.use('/', require('./routes'));
 
-
+app.use(cors()); // Enable CORS for all routes
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 
 mongodb.initDb((err) => {

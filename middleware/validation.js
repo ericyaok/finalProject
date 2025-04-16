@@ -59,7 +59,7 @@ const registerUserRules = [
 
 
 
-const validateBook = (req, res, next) => {
+const validate = (req, res, next) => {
     const errors = validationResult(req);
     if (errors.isEmpty()) {
       return next();
@@ -73,5 +73,6 @@ const validateBook = (req, res, next) => {
     idParamRule,
     registerUserRules,
     loginUserRules,
-    updateUserRules
+    updateUserRules,
+    validate
   };
