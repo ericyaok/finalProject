@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const booksController = require('../controllers/books')
+const validate = require('../middleware/validation')
 
 
 // POST /books
-router.post('/', booksController.createBook);
+router.post('/', validate.createBookRules, validate.validate, booksController.createBook);
 
 // GET /books
 router.get('/', booksController.getAllBooks);
@@ -13,10 +14,10 @@ router.get('/', booksController.getAllBooks);
 router.get('/:id', booksController.getBookById);
 
 // PUT /books/:id
-router.put('/:id', booksController.updateBook);
+router.put('/:id', validate.updateBookRules, validate, booksController.updateBook);
 
 // DELETE /books/:id
-router.delete('/:id', booksController.deleteBook);
+router.delete('/:id', validate.idParamRule, validate, booksController.deleteBook);
 
 
 
