@@ -1,0 +1,82 @@
+[
+    {
+      "username": "kofi_student",
+      "email": "kofi@student.edu.gh",
+      "password": "$2b$10$NlPhE7kWg0yQmXc1ZXE8qeZjvN9T3Cw3eKuvzOQaUeJuE0F0xCdyK",
+      "fullName": "Kofi Mensah",
+      "role": "student",
+      "studentId": "STU10012",
+      "program": "BSc Information Technology",
+      "year": 2,
+      "borrowedBooks": [
+        {
+          "bookId": "book123",
+          "title": "Introduction to Algorithms",
+          "borrowedDate": "2025-04-10T09:00:00.000Z",
+          "dueDate": "2025-04-24T09:00:00.000Z",
+          "returned": false
+        }
+      ]
+    },
+    {
+      "username": "ama_k",
+      "email": "ama.k@students.edu.gh",
+      "password": "$2b$10$s1NQF0sP3AVH7DWkH4JYZ.4MQ3PwVJsm8fVUlC3ZC2LKkuvE1PbqO",
+      "fullName": "Ama Kwabena",
+      "role": "student",
+      "studentId": "STU10013",
+      "program": "BSc Nursing",
+      "year": 1,
+      "borrowedBooks": []
+    },
+    {
+      "username": "yaw_dev",
+      "email": "yaw.dev@students.edu.gh",
+      "password": "$2b$10$Xo7W/JjP6JzGvMNE9xYBxuEdfq0hM.Z97bYjxExxOBkXpZSRn2qxe",
+      "fullName": "Yaw Owusu",
+      "role": "student",
+      "studentId": "STU10014",
+      "program": "BSc Computer Science",
+      "year": 3,
+      "borrowedBooks": [
+        {
+          "bookId": "book234",
+          "title": "Clean Code",
+          "borrowedDate": "2025-04-14T14:15:00.000Z",
+          "dueDate": "2025-04-28T14:15:00.000Z",
+          "returned": false
+        }
+      ]
+    },
+    {
+      "username": "efua_reader",
+      "email": "efua.r@students.edu.gh",
+      "password": "$2b$10$Ze0xPB5U.DTxV8A4wPCXZORRHKsnYbJwM7NoENZPY1RKe9XXOigme",
+      "fullName": "Efua Badu",
+      "role": "student",
+      "studentId": "STU10015",
+      "program": "BA English",
+      "year": 4,
+      "borrowedBooks": []
+    },
+    {
+      "username": "kwame_sci",
+      "email": "kwame.sci@students.edu.gh",
+      "password": "$2b$10$A1dQ/vsMEQYbY4J7Zxh29uU4kJjBKjPtbKGe3ukS3KpJmPNJZ6XyG",
+      "fullName": "Kwame Asante",
+      "role": "student",
+      "studentId": "STU10016",
+      "program": "BSc Biochemistry",
+      "year": 2,
+      "borrowedBooks": [
+        {
+          "bookId": "book345",
+          "title": "Lehninger Principles of Biochemistry",
+          "borrowedDate": "2025-04-12T11:00:00.000Z",
+          "dueDate": "2025-04-26T11:00:00.000Z",
+          "returned": true
+        }
+      ]
+    }
+  ]
+  
