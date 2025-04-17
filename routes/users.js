@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const usersController = require('../controllers/users')
 const validator = require('../middleware/validation')
+const { ensureAuthenticated } = require('../middleware/authenticate');
 
 // POST /users/register
 router.post('/register', validator.registerUserRules, validator.validate, usersController.registerUser);
@@ -10,9 +11,9 @@ router.post('/register', validator.registerUserRules, validator.validate, usersC
 router.get('/', usersController.getUsers);
 
 // PUT /users/:id
-router.put('/:id', validator.updateUserRules, validator.validate, usersController.updateUser);
+router.put('/:id', ensureAuthenticated, validator.updateUserRules, validator.validate, usersController.updateUser);
 
-router.delete('/:id',validator.idParamRule, validator.validate, usersController.deleteUser);
+router.delete('/:id', ensureAuthenticated, validator.idParamRule, validator.validate, usersController.deleteUser);
 
 
 
