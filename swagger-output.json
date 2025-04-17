@@ -334,22 +334,22 @@
             "schema": {
               "type": "object",
               "properties": {
-                "title": {
+                "bookId": {
                   "example": "any"
                 },
-                "author": {
+                "bookTitle": {
                   "example": "any"
                 },
-                "genre": {
+                "userName": {
                   "example": "any"
                 },
-                "publishedYear": {
+                "rating": {
                   "example": "any"
                 },
-                "isbn": {
+                "review": {
                   "example": "any"
                 },
-                "copiesAvailable": {
+                "date": {
                   "example": "any"
                 }
               }
@@ -384,31 +384,6 @@
       }
     },
     "/reviews/{id}": {
-      "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
       "put": {
         "description": "",
         "parameters": [
@@ -424,22 +399,22 @@
             "schema": {
               "type": "object",
               "properties": {
-                "title": {
+                "bookId": {
                   "example": "any"
                 },
-                "author": {
+                "bookTitle": {
                   "example": "any"
                 },
-                "genre": {
+                "userName": {
                   "example": "any"
                 },
-                "publishedYear": {
+                "rating": {
                   "example": "any"
                 },
-                "isbn": {
+                "review": {
                   "example": "any"
                 },
-                "copiesAvailable": {
+                "date": {
                   "example": "any"
                 }
               }
@@ -491,22 +466,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "title": {
+                "userId": {
                   "example": "any"
                 },
-                "author": {
+                "userName": {
                   "example": "any"
                 },
-                "genre": {
+                "bookId": {
                   "example": "any"
                 },
-                "publishedYear": {
+                "bookTitle": {
                   "example": "any"
                 },
-                "isbn": {
-                  "example": "any"
-                },
-                "copiesAvailable": {
+                "dueDate": {
                   "example": "any"
                 }
               }
@@ -541,31 +513,6 @@
       }
     },
     "/borrows/{id}": {
-      "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
       "put": {
         "description": "",
         "parameters": [
@@ -581,22 +528,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "title": {
+                "userId": {
                   "example": "any"
                 },
-                "author": {
+                "userName": {
                   "example": "any"
                 },
-                "genre": {
+                "bookId": {
                   "example": "any"
                 },
-                "publishedYear": {
+                "bookTitle": {
                   "example": "any"
                 },
-                "isbn": {
-                  "example": "any"
-                },
-                "copiesAvailable": {
+                "dueDate": {
                   "example": "any"
                 }
               }
