@@ -5,16 +5,16 @@ const validator = require('../middleware/validation')
 
 
 
-router.post('/', borrowsController.createBorrow);
+router.post('/', validator.transactionRules, validator.validate, borrowsController.createBorrow);
 
 
 router.get('/', borrowsController.getAllBorrows);
 
 
-router.put('/:id', borrowsController.updateBorrow);
+router.put('/:id', validator.transactionRules, validator.validate, borrowsController.updateBorrow);
 
 
-router.delete('/:id', borrowsController.deleteBorrow);
+router.delete('/:id', validator.idParamRule, validator.validate, borrowsController.deleteBorrow);
 
 
 module.exports = router;
