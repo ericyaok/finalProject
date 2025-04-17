@@ -1,0 +1,53 @@
+[
+    {
+      "userId": "u1001",
+      "userName": "Emmanuel Boateng",
+      "bookId": "bk101",
+      "bookTitle": "To Kill a Mockingbird",
+      "borrowDate": "2025-04-01",
+      "dueDate": "2025-04-15",
+      "returnDate": "2025-04-14",
+      "status": "Returned"
+    },
+    {
+      "userId": "u1002",
+      "userName": "Linda Mensah",
+      "bookId": "bk102",
+      "bookTitle": "1984",
+      "borrowDate": "2025-04-03",
+      "dueDate": "2025-04-17",
+      "returnDate": null,
+      "status": "Borrowed"
+    },
+    {
+      "userId": "u1003",
+      "userName": "Kofi Owusu",
+      "bookId": "bk103",
+      "bookTitle": "The Great Gatsby",
+      "borrowDate": "2025-03-28",
+      "dueDate": "2025-04-11",
+      "returnDate": "2025-04-13",
+      "status": "Overdue"
+    },
+    {
+      "userId": "u1004",
+      "userName": "Sarah Addo",
+      "bookId": "bk104",
+      "bookTitle": "Sapiens: A Brief History of Humankind",
+      "borrowDate": "2025-04-10",
+      "dueDate": "2025-04-24",
+      "returnDate": null,
+      "status": "Borrowed"
+    },
+    {
+      "userId": "u1005",
+      "userName": "Michael Agyekum",
+      "bookId": "bk105",
+      "bookTitle": "Atomic Habits",
+      "borrowDate": "2025-03-15",
+      "dueDate": "2025-03-29",
+      "returnDate": "2025-03-29",
+      "status": "Returned"
+    }
+  ]
+  

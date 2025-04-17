@@ -1,0 +1,48 @@
+[
+    {
+      "reviewId": "rev001",
+      "bookId": "bk101",
+      "bookTitle": "To Kill a Mockingbird",
+      "userName": "Emily Carter",
+      "rating": 5,
+      "review": "A timeless classic. The characters and moral lessons stay with you forever.",
+      "date": "2025-04-15"
+    },
+    {
+      "reviewId": "rev002",
+      "bookId": "bk102",
+      "bookTitle": "1984",
+      "userName": "James Owusu",
+      "rating": 4,
+      "review": "Thought-provoking and chilling. A must-read for anyone interested in politics or history.",
+      "date": "2025-04-14"
+    },
+    {
+      "reviewId": "rev003",
+      "bookId": "bk103",
+      "bookTitle": "The Great Gatsby",
+      "userName": "Grace Lin",
+      "rating": 3,
+      "review": "Beautiful writing, but I found the plot a bit slow. Still worth reading for the symbolism.",
+      "date": "2025-04-12"
+    },
+    {
+      "reviewId": "rev004",
+      "bookId": "bk104",
+      "bookTitle": "Sapiens: A Brief History of Humankind",
+      "userName": "Ahmed Bello",
+      "rating": 5,
+      "review": "Incredibly insightful and engaging. It changed how I view human history.",
+      "date": "2025-04-10"
+    },
+    {
+      "reviewId": "rev005",
+      "bookId": "bk105",
+      "bookTitle": "Atomic Habits",
+      "userName": "Naomi Asare",
+      "rating": 5,
+      "review": "Very practical and easy to apply. I'm already seeing changes in my daily habits.",
+      "date": "2025-04-09"
+    }
+  ]
+  

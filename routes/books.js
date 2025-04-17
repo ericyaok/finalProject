@@ -20,6 +20,4 @@ router.put('/:id', validator.updateBookRules, validator.validate, booksControlle
 router.delete('/:id', validator.idParamRule, validator.validate, booksController.deleteBook);
 
 
-
-
 module.exports = router;
