@@ -76,7 +76,7 @@ const deleteBorrow = async (req, res) => {
     try {
         const transactionIdId = ObjectId.createFromHexString(req.params.id);
         const db = getDatabase();
-        const response = await db.collection('review').deleteOne({ _id: transactionIdId });
+        const response = await db.collection('borrows').deleteOne({ _id: transactionIdId });
 
         if (response.deletedCount > 0) {
             return res.status(204).send();

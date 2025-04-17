@@ -72,7 +72,7 @@ const deleteReview = async (req, res) => {
     try {
         const reviewId = ObjectId.createFromHexString(req.params.id);
         const db = getDatabase();
-        const response = await db.collection('review').deleteOne({ _id: reviewId });
+        const response = await db.collection('reviews').deleteOne({ _id: reviewId });
 
         if (response.deletedCount > 0) {
             return res.status(204).send();
